@@ -1,14 +1,14 @@
 pipeline {
   agent any
   stages {
-    stage('compile-app') {
+    stage('build-the-app') {
       steps {
-        echo 'this is the compile job'
+        echo 'this is the build job'
         sh 'npm install'
       }
     }
 
-    stage('test-app') {
+    stage('test-the-app') {
       steps {
         echo 'this is the test job'
         sh 'npm test'
